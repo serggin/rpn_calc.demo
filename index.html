@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href=".">
+    <title>Custom controls</title>
+    <script type="module" src="dist/main.js"></script>
+    <link rel="stylesheet" href="dist/custom-inputs/style.css">
+    <link rel="stylesheet" href="test.css">
+    <style>
+        #numInput{
+/*            height: 80px; */
+        }
+    </style>
+</head>
+<body>
+    <h2>Input controls test</h2>
+    <div class="blocks-wrapper">
+        <div class="block">
+            <label for="numInput">NumericInput</label>
+            <div id="numInput"></div>
+            <div><label>Value: </label><span id="numInputValue"></span></div>
+            <div><label>Text: </label><span id="numInputText"></span></div>
+            <div><label>Valid: </label><span id="numInputValid">false</span></div>
+            <div>
+                <button id="numInputValueButton">Set value</button>
+                <input  id="numInputSetValue" type="text" />
+            </div>
+            <div>
+                <button id="numInputTextButton">Set text</button>
+                <input  id="numInputSetText" type="text" />
+            </div>
+        </div>
+        <div class="block">
+            <label for="numInput">CalcInput</label>
+            <div id="calcInput"></div>
+            <div><label>Value: </label><span id="calcInputValue"></span></div>
+            <div><label>Text: </label><span id="calcInputText"></span></div>
+            <div><label>Valid: </label><span id="calcInputValid">false</span></div>
+            <div>
+                <button id="calcInputValueButton">Set value</button>
+                <input  id="calcInputSetValue" type="text" />
+            </div>
+            <div>
+                <button id="calcInputTextButton">Set text</button>
+                <input  id="calcInputSetText" type="text" />
+            </div>
+        </div>
+    </div>
+    <h2>Custom style</h2>
+    <div class="blocks-wrapper custom-style">
+        <div class="block">
+            <label for="numInputCS">NumericInput</label>
+            <div id="numInputCS"></div>
+        </div>
+        <div class="block">
+            <label for="calcInputCS">NumericInput</label>
+            <div id="calcInputCS"></div>
+        </div>
+    </div>
+    <button id="destroyButton">Destroy all</button>
+
+    <h2>Automated test using Formula Generator</h2>
+    <p>Passed <span id="result" /> </p>
+    <p>See console log for details</p>
+
+</body>
+</html>

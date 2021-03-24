@@ -1,0 +1,40 @@
+.blocks-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block {
+    flex: 1;
+    margin: 8px;
+    border: 3px solid #ccc;
+    padding: 8px;
+    display: inline-block;
+}
+label {
+    font-weight: bold;
+}
+button {
+    width: 8em;
+}
+input[type="text"] {
+    border-radius: 0;
+}
+.custom-style .numeric-input {
+    background-color: yellow;
+}
+.custom-style .calc-input {
+    background-color: yellow;
+}
+.custom-style .calc-value-wrapper {
+    border: 4px outset #aaaaaa;
+    /*box-sizing: border-box;*/
+    /*padding:8px 4px;*/
+}
+#numInputCS {
+    /*display: inline-block;*/
+    width: 300px;
+    height: 40px;
+}
+#calcInputCS {
+    width: 600px;
+    height: 75px;
+}

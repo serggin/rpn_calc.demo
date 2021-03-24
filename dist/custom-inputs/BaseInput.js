@@ -26,9 +26,7 @@ export class BaseInput {
                 const event = new CustomEvent(BaseInput.VALUE_CHANGED, {
                     detail: { value },
                 });
-                //console.log('BEFORE dispatch', value, event);
                 this._notifier.dispatch(event);
-                //console.log('value dispatched', value);
             }
             if (oldIsValid !== this.isValid) {
                 this._notifier.dispatch(new CustomEvent(BaseInput.IS_VALID_CHANGED, {

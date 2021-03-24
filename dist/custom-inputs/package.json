@@ -1,0 +1,13 @@
+{
+  "name": "custom-inputs",
+  "version": "1.0.0",
+  "description": "NumericInput and CalcInput as custom input browser fields",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["."],
+  "author": {
+    "name": "serggin"
+  },
+  "dependencies": {
+  }
+}

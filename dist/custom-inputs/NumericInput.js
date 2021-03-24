@@ -24,10 +24,6 @@ export class NumericInput extends BaseInput {
             inputElement.onblur = this.onBlur;
             this._inputElement = inputElement;
             hostElement.appendChild(this._inputElement);
-            /*       this.addEventListener(BaseInput.IS_VALID_CHANGED, (isValid) => {
-                       this.updateBorderStyle();
-                   });
-           */ 
         };
         this.getBorderedElement = () => {
             return this._inputElement;
@@ -54,14 +50,9 @@ export class NumericInput extends BaseInput {
     get value() {
         return this._value;
     }
-    /*
-     * It's a bit strange this property must be write enabled by requirement
-     */
     set value(val) {
         if (typeof val === 'number' && val !== this._value) {
-            //this._inputElement!.value = val.toString();
             this.text = val.toString();
-            //            this.parse();
         }
     }
 }

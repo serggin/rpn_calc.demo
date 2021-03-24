@@ -26,8 +26,6 @@ input[type="text"] {
 }
 .custom-style .calc-value-wrapper {
     border: 4px outset #aaaaaa;
-    /*box-sizing: border-box;*/
-    /*padding:8px 4px;*/
 }
 #numInputCS {
     /*display: inline-block;*/

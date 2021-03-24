@@ -35,7 +35,6 @@ export class Notifier {
          * @param event {CustomEvent}   event object
          */
         this.dispatch = (event) => {
-            //console.log('dispatch event=', event);
             const type = event.type;
             if (type in this._listeners) {
                 this._listeners[type].forEach(listener => {

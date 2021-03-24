@@ -29,7 +29,6 @@ export class CalcInput extends BaseInput {
             valueWrapper.className = 'calc-value-wrapper';
             let valueElement = document.createElement("SPAN");
             valueElement.className = 'calc-value';
-            //valueElement.textContent = '\u00A0';
             this._valueElement = valueElement;
             valueWrapper.appendChild(valueElement);
             wrapperElement.appendChild(valueWrapper);
@@ -56,7 +55,6 @@ export class CalcInput extends BaseInput {
         };
         this.displayValue = (value) => {
             const content = value || value === 0 ? value.toString() : (value === undefined ? '?' : '\u00A0');
-            //console.log('content=', content);
             this._valueElement.textContent = content;
         };
         if (this._hostElement) {
@@ -72,14 +70,10 @@ export class CalcInput extends BaseInput {
     get value() {
         return this._value;
     }
-    /*
-   * It's a bit strange this property must be write enabled by requirement
-   */
     set value(val) {
         if (typeof val === "number") {
             if (val !== this._value) {
-                this._inputElement.value = val.toString();
-                this.displayValue(val);
+                this.text = val.toString();
             }
         }
         else {

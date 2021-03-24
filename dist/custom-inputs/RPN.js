@@ -50,7 +50,6 @@ export class RPN {
                         this.tokens.push(token);
                     }
                 } while (token || token === 0);
-                //console.log('tokens=', this.tokens);
                 this.parseInfix();
                 this.calculate();
                 if (this.stack.length === 1 && !Number.isNaN(this.stack[0])) {
@@ -122,7 +121,6 @@ export class RPN {
             let token;
             for (let i = 0; i < this.tokens.length; i += 1) {
                 token = this.tokens[i];
-                //console.log('token=', token, 'prevToken=', prevToken);
                 if (typeof token === 'number') {
                     this.out.push(token);
                 }
@@ -174,8 +172,6 @@ export class RPN {
                     }
                 }
                 prevToken = token;
-                //console.log('stack=', this.stack);
-                //console.log('out=', this.out);
             }
             if (this.stack.length > 0) {
                 for (let i = this.stack.length - 1; i >= 0; i -= 1) {

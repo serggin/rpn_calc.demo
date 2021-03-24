@@ -10,6 +10,9 @@
     height: inherit;
     width: inherit;
 }
+.numeric-input:focus{
+    outline: none;
+}
 .calc-input-wrapper {
     box-sizing: border-box;
     border-width: 3px;
@@ -50,9 +53,6 @@
     margin: 0;
     padding: 8px;
 }
-/*.numeric-input:focus, .calc-input-wrapper:focus {
-    border-color: #1e90ff;
-}*/
 .custom-inputs_focus {
     border-color: #1e90ff;
 }

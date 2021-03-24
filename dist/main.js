@@ -1,5 +1,5 @@
-import { NumericInput, CalcInput, RPN } from "./custom-inputs/index.js";
-import { FormulaGenerator } from "./FormulaGenerator.js";
+import { NumericInput, CalcInput } from "./custom-inputs/index.js";
+//import {FormulaGenerator} from "./FormulaGenerator.js";
 const buttons = [];
 const customInputs = [];
 try {
@@ -136,6 +136,7 @@ function updateNodeText(id, text) {
 /**
  * FormulaGenerator & RPN demo
  */
+/*
 const formulaGenerator = new FormulaGenerator(3, 3, 10, 0);
 const rpn = new RPN();
 const total = 10;
@@ -147,14 +148,14 @@ for (let i = 0; i < total; i += 1) {
     const value = rpn.value;
     const ev = eval(formula);
     if (ev === value) {
-        passed++;
+        passed ++;
         console.log(formula, value, ev);
-    }
-    else {
+    } else {
         console.error(formula, value, ev);
     }
 }
 console.log('================== Generated formulas test ended =======================');
 const node = document.createTextNode(`${passed} of ${total}`);
 const resultElement = document.getElementById('result');
-resultElement.appendChild(node);
+resultElement!.appendChild(node);
+*/

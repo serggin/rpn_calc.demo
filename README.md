@@ -1,3 +1,4 @@
-#rpn_calc.tt
+#"rpn_calc" Test Task
 
-## Live demo version
+Live demo version
+https://serggin.github.io/rpn_calc.demo/
